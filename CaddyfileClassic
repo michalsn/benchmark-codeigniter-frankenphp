@@ -1,0 +1,28 @@
+# CodeIgniter 4 - FrankenPHP Classic Mode Configuration
+#
+# This Caddyfile configures FrankenPHP to run CodeIgniter in classic mode.
+# Adjust settings based on your server resources and application needs.
+#
+# Start with: frankenphp run
+
+{
+    frankenphp {
+        # Number of threads (default: 2x CPU cores)
+        # num_threads 8
+    }
+
+    # Disable admin API (recommended for production)
+    admin off
+}
+
+# HTTP server configuration
+:8080 {
+    # Document root
+    root * public
+
+    # Enable compression
+    encode zstd br gzip
+
+    php_server
+    file_server
+}
