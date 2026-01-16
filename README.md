@@ -3,7 +3,7 @@
 ## Installation
 
 1. Download [FrankenPHP v1.11.1](https://github.com/php/frankenphp/releases/tag/v1.11.1)
-2. Clone CodeIgniter 4.7
+2. Clone [CodeIgniter 4.7](https://github.com/michalsn/CodeIgniter4/tree/worker-mode)
 3. Download this repo and place in `app/ThirdParty/benchmark/`
 4. Edit `app/Config/Autoload.php` and add to the `$psr4` array:
    ```php
@@ -50,8 +50,8 @@ All benchmarks are run on macOS with an M1 chip and 16 GB of RAM.
 
 **Configuration:**
 
-- FrankenPHP (Classic): num_threads = 16
-- FrankenPHP (Worker): worker.num = 16
+- FrankenPHP (Classic): `num_threads = 16`
+- FrankenPHP (Worker): `worker.num = 16`
 
 ### Static page
 
